@@ -49,15 +49,13 @@ airflow db init
 echo "   ### Starting Web UI of airflow ###                                        "
 sleep 1
 
-airflow web server -p 8070
-
 airflow web server -p 8070 -D
-echo "   ### Web UI of airflow go to: http://localhost:8070 ###                         "
+
+echo "   ### Web UI of airflow go to: http://localhost:8070 localhost is your AWS IP ###                         "
 echo "   ### Please remenber go to Inbound rules and edit port 8070 of this instance ###"
 echo "   ### Recomend 0.0.0.0/0 ###                                                     "
 echo "   ### Other for more Security Options ###                                        "
-sleep 3
-
+echo "   ### Start UI of Airflow with airflow web server -p 8070 -D (now is started or re throw)"
 source activate airflow
 echo "   ### Starting Scheduler of airflow ###                                        "
 sleep 1
