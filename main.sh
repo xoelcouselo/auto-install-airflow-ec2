@@ -28,7 +28,7 @@ source ~/.bashrc
 # Create a python virtual enviroment
 echo "   ### Create a enviroment  called: airflow (Python=3.9) ###                                       "
 sleep 1
-conda create -n airflow python=3.9 anaconda
+conda create -n airflow python=3.9
 
 # Enter to the airflow enviroment
 source activate airflow
