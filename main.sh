@@ -46,9 +46,13 @@ sleep 1
 
 airflow db init
 
+echo "   ### Create User on Web UI of airflow ###                                        "
+echo "   ### User:admin Password:admin ###"
+airflow users create --role Admin --user admin --email admin --firstname admin --lastname admin --password admin
+
+
 echo "   ### Starting Web UI of airflow ###                                        "
 sleep 1
-
 airflow web server -p 8070 -D
 
 echo "   ### Web UI of airflow go to: http://localhost:8070 localhost is your AWS IP ###                         "
@@ -56,7 +60,8 @@ echo "   ### Please remenber go to Inbound rules and edit port 8070 of this inst
 echo "   ### Recomend 0.0.0.0/0 ###                                                     "
 echo "   ### Other for more Security Options ###                                        "
 echo "   ### Start UI of Airflow with airflow web server -p 8070 -D (now is started or re throw)"
-source activate airflow
+echo "   ### REMENBER!: User:admin Password:admin (Change leater) ###" 
+conda activate airflow
 echo "   ### Starting Scheduler of airflow ###                                        "
 sleep 1
 airflow scheduler
