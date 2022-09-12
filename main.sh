@@ -44,7 +44,7 @@ pip install apache-airflow
 echo "   ### Starting DDBB of airflow ###                                        "
 sleep 1
 
-airflow initdb
+airflow db init
 
 echo "   ### Starting Web UI of airflow ###                                        "
 sleep 1
