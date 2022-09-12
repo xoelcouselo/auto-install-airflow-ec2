@@ -21,6 +21,10 @@ sha256sum Anaconda3-2022.05-Linux-x86_64.sh
 
 bash Anaconda3-2022.05-Linux-x86_64.sh
 
+# Refresh .bashrc
+echo "   ### Load a new configuration on ~/.bashrc ###   
+source ~/.bashrc
+
 # Create a python virtual enviroment
 echo "   ### Create a enviroment  called: airflow (Python=3.9) ###                                       "
 sleep 1
