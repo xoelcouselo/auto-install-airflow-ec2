@@ -2,7 +2,7 @@
 
 ### Requirements:
 
-- If you need install git (on Amazon Linux is whit yum)
+- If you need install git (on Amazon Linux is with yum)
 
 ### This script (main.sh) create a basic install of AirFlow whit Anaconda Environment:
 
