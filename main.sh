@@ -33,6 +33,7 @@ conda create -n airflow python=3.9
 
 # Enter to the airflow enviroment
 conda activate airflow
+source activate airflow
 
 # Install of Airflow
 echo "   ### Install AirFlow with pip ###                                   "
@@ -54,7 +55,7 @@ airflow users create --role Admin --user admin --email admin --firstname admin -
 
 echo "   ### Starting Web UI of airflow ###                                        "
 sleep 1
-airflow web server -p 8070 -D
+airflow webserver -p 8070 -D
 
 echo "   ### Web UI of airflow go to: http://localhost:8070 localhost is your AWS IP ###                         "
 echo "   ### Please remenber go to Inbound rules and edit port 8070 of this instance ###"
